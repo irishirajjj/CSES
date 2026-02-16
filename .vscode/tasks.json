@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build and run cpp",
+      "type": "shell",
+      "command": "g++-15 -std=gnu++17 ${file} -o bin/${fileBasenameNoExtension} && bin/${fileBasenameNoExtension} < input.txt",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
